@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'android';
+    src: url('../idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor01: #ffffff ;
+    --cor02: #1E2D40;
+    --cor03: #79818C;
+    --cor04: #8AA6BF;
+    --cor05: #F2F2F2;
+
+    --fonte-destaque: 'android';
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(218, 218, 218);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom,var(--cor03) , var(--cor02));
+    height: 150px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: var(--fonte-padrao);
+    padding: 10px;
+    padding-top: 30px;
+}
+
+header p {
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor02);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--cor01);
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: #79818C;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 1s;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    min-width: 280px;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+ 
+    }
+
+main h2 {
+    color: var(--cor02);
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+
+}
+
+main h3 {
+
+    color: var(--cor03);
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    background-color: #1E2D40;
+    border-radius: 10px 10px 0px 0px ;
+    margin: -10px -10px -10px -10px;
+    
+
+}
+
+.pequena {
+    display: block;
+    margin: auto;
+    max-width: 250px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 20px;
+    
+}
+
+aside {
+    background-color: #79818C;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+aside ul {
+    columns: 2;
+    list-style-position: inside;
+    color: var(--cor05);
+}
+
+aside p {
+    color: var(--cor05);
+    font-weight: bold;
+    text-align: justify;
+    text-indent: 20px;
+    padding: 20px;
+
+}
+
+aside h3 {
+    color: #F2F2F2;
+}
+
+footer {
+    background-color: black;
+    margin-top: 10px;
+    color: var(--cor03);
+    text-align: center;
+    font-style: italic;
+}
